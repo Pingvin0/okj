@@ -2,7 +2,7 @@
 with open('jackie.txt', 'r', encoding='utf-8-sig') as f:
     # Beolvassuk az adatokat es matrixba tesszuk, majd az elso sort ami a cimeket
     # tartalmazza, kivagjuk. Ezen felul, az adatokat int-e alakitjuk, es levagjuk a fejlecet.
-    adatok = [[int(j) for j in i.split()] for ind, i in enumerate(f.read().split('\n')) if ind != 0]
+    adatok = [[int(j) for j in i.split()] for ind, i in enumerate(f.read().strip().split('\n')) if ind != 0]
     
     # Komprehenziv lista nelkul:
     # adatok = []
