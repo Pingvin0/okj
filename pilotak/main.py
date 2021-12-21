@@ -27,8 +27,9 @@ for sor in adatok:
         continue
     stat[sor[-1]] = stat.get(sor[-1], 0) + 1
 
-stat = list(stat.items())
-stat = list(filter(lambda x: x[1] > 1, stat))
-stat = list(map(lambda x: str(x[0]), stat))
+stat = stat.items()
+
+stat = filter(lambda x: x[1] > 1, stat)
+stat = map(lambda x: str(x[0]), stat)
 print('7. feladat: ', end='')
 print(', '.join(stat))
