@@ -70,6 +70,8 @@ veg = """</table>
 </body>
 </html>"""
 
+# Csak az evet (0. index), versenyek szamat (1. index), es a gyozelmek szamat (2. index)
+# kell kiirni.
 only_show = range(3)
 
 f.write(kezdet + '\n')
