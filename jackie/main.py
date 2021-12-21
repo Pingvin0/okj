@@ -16,8 +16,6 @@ with open('jackie.txt', 'r', encoding='utf-8-sig') as f:
     #         # Indexbol levonunk 1-et, mert a fejlecet eldobtuk,
     #         # es nem adtunk hozza listat az adatok tombhoz az elso iteracioban.
     #         adatok[index-1].append(int(adat))
-    
-    f.close()
 # year	races	wins	podiums	poles	fastests
 #  0      1      2         3      4         5
 
